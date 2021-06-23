@@ -1,0 +1,107 @@
+.nav-small {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: if($link-decoration == none, null, none);
+}
+.nav-phone,
+.nav-email,
+.nav-social,
+.nav-language {
+  color: $gray-100;
+  a {
+    color: $gray-100;
+  }
+}
+.nav-primary {
+  text-transform: uppercase;
+  font-weight: 600;
+  .nav-link {
+    padding: 0.5rem;
+  }
+}
+
+//Nav onmobile
+.hambuger-sidebar-mobile {
+  border-radius: 50%;
+  background: $primary;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  i {
+    color: $light;
+  }
+}
+.e-sidebar {
+  visibility: hidden;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  .content-sidebar {
+    overflow-y: auto;
+    margin-top: 1rem;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        border-bottom: 1px solid #c7c7c77a;
+        a {
+          color: black;
+          text-decoration: none;
+          display: block;
+          padding: 8px 1.2rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          &.menu-active {
+            color: $primary;
+          }
+          i {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .sidebar-inner {
+    flex: 0 0 auto;
+    width: 280px;
+    transform: translateX(-280px);
+    &.to-left {
+      transform: translateX(280px);
+    }
+    background-color: #fff;
+    transition: all 0.6s;
+  }
+  &.open-sidebar {
+    visibility: visible;
+    .sidebar-inner {
+      transform: translateX(0);
+    }
+  }
+  .sidebar-overlay {
+    flex: 1 0 auto;
+  }
+}
+.bullet-arrow {
+  position: relative;
+  padding: 7px 0 7px 25px;
+  margin: 0;
+  border-bottom: 1px solid #b1b1b1d7;
+  a {
+    color: $light;
+  }
+  &::before {
+    position: absolute;
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    left: 0;
+  }
+}

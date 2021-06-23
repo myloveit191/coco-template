@@ -1,0 +1,19 @@
+.shop-sidebar{
+    .title{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            color: #888;
+            a{
+                text-decoration: none;
+                color: #888;
+            }
+        }
+    }
+}

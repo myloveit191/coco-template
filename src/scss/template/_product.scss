@@ -1,0 +1,36 @@
+.product-wrapper {
+  padding: 1.5rem 2rem;
+  background-color: $white;
+}
+.product-slider {
+  .thumb-carousel {
+    .swiper-slide {
+      height: 100% !important;
+      opacity: 0.4;
+    }
+    .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+  }
+}
+.product-content{
+  .category{
+    a{
+      color: rgb(158, 158, 158);
+    }
+  }
+  .product-name{
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+  }
+  .short-description{
+    p{
+      margin-bottom: .5rem;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .product-wrapper {
+    padding: .5rem 1rem;
+  }
+}
