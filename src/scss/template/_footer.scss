@@ -1,0 +1,36 @@
+footer {
+  padding-top: 30px;
+  background-color: rgb(15, 83, 82);
+  color: $light;
+  .footer-logo{
+      width: 40%;
+      margin-bottom: 1rem;
+      img{
+          width: 100%;
+      }
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+    }
+  }
+  .footer-info-company {
+      a{
+          color: $primary;
+      }
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+  .copyright{
+    padding: 1rem 0 ;
+    background-color: $dark;
+    p{
+        margin: 0;
+    }
+  }
+}

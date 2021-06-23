@@ -1,0 +1,15 @@
+extends template/layout
+
+block main 
+    main
+        #content
+            section 
+                include ./includes/home/slider
+            section.cat-products
+                include ./includes/home/categories
+            section.product-popular.section-general 
+                include ./includes/home/product-popular
+            section.section-videos
+                include ./includes/home/section-videos
+            section.section-posts.section-general
+                include ./includes/home/section-posts

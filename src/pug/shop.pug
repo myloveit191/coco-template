@@ -1,0 +1,14 @@
+extends template/layout
+
+block main 
+    main
+        .breadcrumb-wraper 
+            .container 
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="/html/index.html") Trang chủ
+                        li(aria-current="page").breadcrumb-item.active Cửa hàng
+        #content
+            section.shop-products
+                include ./includes/shop/products

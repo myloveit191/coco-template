@@ -1,0 +1,57 @@
+@import "root";
+@import "background";
+@import "button";
+@import "nav";
+@import "sidebar";
+@import "breadcrumb";
+@import "slider";
+@import "section";
+@import "products";
+@import "product";
+@import "header";
+@import "footer";
+
+.sort-list {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(212, 212, 212, 0.671);
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        padding: 1rem;
+        font-weight: 600;
+        color: $gray-700;
+        &.link-active {
+          color: $primary;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 4px;
+            background-color: $blue;
+          }
+        }
+        &:hover {
+          color: $primary;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 4px;
+            background-color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+extends template/layout
+
+block main 
+    main
+        .breadcrumb-wraper 
+            .container 
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="/html/index.html") Trang chủ
+                        li.breadcrumb-item
+                            a(href="/html/shop.html") Dừa
+                        li(aria-current="page").breadcrumb-item.active Coir Mat
+        #content
+            section.detail-product
+                include ./includes/detail/product
+block js 
+    script(src="../js/detail.js") 
