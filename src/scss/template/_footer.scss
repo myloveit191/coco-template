@@ -1,36 +1,51 @@
 footer {
-  padding-top: 30px;
-  background-color: rgb(15, 83, 82);
+  background-color: rgb(5, 35, 34);
   color: $light;
-  .footer-logo{
-      width: 40%;
-      margin-bottom: 1rem;
-      img{
-          width: 100%;
-      }
+  .footer-logo {
+    width: 40%;
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+    }
   }
-  h4{
+  h4 {
     font-size: 1.2rem;
   }
   ul {
     margin: 0;
     padding: 0;
-    li{
+    li {
       list-style: none;
     }
   }
   .footer-info-company {
-      a{
-          color: $primary;
-      }
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-  }
-  .copyright{
-    padding: 1rem 0 ;
-    background-color: $dark;
-    p{
-        margin: 0;
+    a {
+      color: $primary;
     }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .copyright {
+    padding: 1rem 0;
+    background-color: $black;
+    p {
+      margin: 0;
+    }
+  }
+}
+.top-footer {
+  padding: 30px 0;
+  position: relative;
+  .footer-img-bg {
+    position: absolute;
+    background-image: url(../imgs/banner-home-footer.jpg);
+    object-position: 50% 50%;
+    object-fit: cover;
+    opacity: 0.1;
+    left: 0;
+    width: 100%;
+    z-index: 8;
+    top: 0;
+    bottom: 0;
   }
 }

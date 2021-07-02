@@ -7644,6 +7644,40 @@ body {
   .nav-primary .nav-link {
     padding: 0.5rem; }
 
+.nav-desktop .sub-nav {
+  position: relative; }
+  .nav-desktop .sub-nav ul {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 10px;
+    position: absolute;
+    background-color: #fff;
+    padding: 0.5rem 1.8rem;
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: normal;
+    z-index: 99;
+    box-shadow: 1px 1px 4px 0px #c3c3c3;
+    flex-direction: column;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .nav-desktop .sub-nav ul li:not(:last-child) {
+      border-bottom: 1px solid #ececec; }
+    .nav-desktop .sub-nav ul .nav-link {
+      width: max-content;
+      text-align: left; }
+  .nav-desktop .sub-nav:hover ul {
+    visibility: visible;
+    opacity: 1; }
+  .nav-desktop .sub-nav.on-right ul {
+    right: 0; }
+
+.nav-desktop .btn-search {
+  width: 300px; }
+  .nav-desktop .btn-search:focus {
+    outline: none;
+    border: 1px solid #ffc50e;
+    box-shadow: none; }
+
 .hambuger-sidebar-mobile {
   border-radius: 50%;
   background: #ffc50e;
@@ -7673,8 +7707,9 @@ body {
       margin: 0;
       padding: 0; }
       .e-sidebar .content-sidebar ul li {
-        list-style: none;
-        border-bottom: 1px solid #c7c7c77a; }
+        list-style: none; }
+        .e-sidebar .content-sidebar ul li.item-active > a {
+          color: #ffc50e; }
         .e-sidebar .content-sidebar ul li a {
           color: black;
           text-decoration: none;
@@ -7686,6 +7721,11 @@ body {
             color: #ffc50e; }
           .e-sidebar .content-sidebar ul li a i {
             margin-right: 1rem; }
+    .e-sidebar .content-sidebar .nav-sub ul {
+      padding-left: 2rem; }
+      .e-sidebar .content-sidebar .nav-sub ul a {
+        text-transform: unset;
+        padding: 4px .8rem; }
   .e-sidebar .sidebar-inner {
     flex: 0 0 auto;
     width: 280px;
@@ -7750,6 +7790,13 @@ body {
   height: 100%;
   object-fit: cover; }
 
+.swiper-posts .swiper-button-next, .swiper-posts .swiper-button-prev, .swiper-banner .swiper-button-next, .swiper-banner .swiper-button-prev {
+  color: #ffc50e; }
+  .swiper-posts .swiper-button-next::after, .swiper-posts .swiper-button-prev::after, .swiper-banner .swiper-button-next::after, .swiper-banner .swiper-button-prev::after {
+    font-size: 2rem; }
+  .swiper-posts .swiper-button-next:hover, .swiper-posts .swiper-button-prev:hover, .swiper-banner .swiper-button-next:hover, .swiper-banner .swiper-button-prev:hover {
+    background-color: #fff; }
+
 .section-general {
   background-color: rgba(222, 219, 208, 0.73);
   padding-top: 2rem;
@@ -7803,6 +7850,8 @@ body {
   border: none; }
   .product-popular-inner .card .card-body {
     padding: 0.25rem; }
+  .product-popular-inner .card:hover .quick-view {
+    bottom: 0; }
 
 .product-popular-inner a {
   display: block; }
@@ -7814,6 +7863,20 @@ body {
     color: #212529;
     font-weight: 600;
     font-size: 0.8rem; }
+
+.product-popular-inner .image-cover {
+  overflow: hidden; }
+  .product-popular-inner .image-cover .quick-view {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    width: 100%;
+    background-color: #ffc50e;
+    color: #fff;
+    text-align: center;
+    padding: .25rem 0;
+    cursor: pointer;
+    transition: all .3s ease-out; }
 
 .image-cover {
   position: relative;
@@ -7982,12 +8045,14 @@ body {
 .header-top {
   background-color: #343a40; }
 
+.bg-fixed {
+  background-color: rgba(255, 255, 255, 0.92); }
+
 .header-inner {
   height: 90px; }
 
 footer {
-  padding-top: 30px;
-  background-color: #0f5352;
+  background-color: #052322;
   color: #f8f9fa; }
   footer .footer-logo {
     width: 40%;
@@ -8008,9 +8073,24 @@ footer {
       color: #ffc50e; }
   footer .copyright {
     padding: 1rem 0;
-    background-color: #343a40; }
+    background-color: #000; }
     footer .copyright p {
       margin: 0; }
+
+.top-footer {
+  padding: 30px 0;
+  position: relative; }
+  .top-footer .footer-img-bg {
+    position: absolute;
+    background-image: url(../imgs/banner-home-footer.jpg);
+    object-position: 50% 50%;
+    object-fit: cover;
+    opacity: 0.1;
+    left: 0;
+    width: 100%;
+    z-index: 8;
+    top: 0;
+    bottom: 0; }
 
 .sort-list {
   margin-bottom: 1rem;

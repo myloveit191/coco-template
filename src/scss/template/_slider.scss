@@ -8,3 +8,14 @@
   height: 100%;
   object-fit: cover;
 }
+.swiper-posts,.swiper-banner{
+  .swiper-button-next,.swiper-button-prev{
+    color: $primary;
+    &::after{
+      font-size: 2rem;
+    }
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}

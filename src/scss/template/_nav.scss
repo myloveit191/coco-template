@@ -19,6 +19,54 @@
     padding: 0.5rem;
   }
 }
+.nav-desktop {
+  .sub-nav {
+    position: relative;
+    ul {
+      visibility: hidden;
+      opacity: 0;
+      margin-top: 10px;
+      position: absolute;
+      background-color: #fff;
+      padding: 0.5rem 1.8rem;
+      font-size: 1rem;
+      text-transform: none;
+      font-weight: normal;
+      z-index: 99;
+      box-shadow: 1px 1px 4px 0px #c3c3c3;
+      flex-direction: column;
+      transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      li {
+        &:not(:last-child) {
+          border-bottom: 1px solid rgb(236, 236, 236);
+        }
+      }
+      .nav-link {
+        width: max-content;
+        text-align: left;
+      }
+    }
+    &:hover {
+      ul {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    &.on-right{
+      ul{
+        right: 0;
+      }
+    }
+  }
+  .btn-search{
+    width: 300px;
+    &:focus{
+      outline: none;
+      border: 1px solid $primary;
+      box-shadow: none;
+    }
+  }
+}
 
 //Nav onmobile
 .hambuger-sidebar-mobile {
@@ -51,8 +99,12 @@
       margin: 0;
       padding: 0;
       li {
+        &.item-active{
+          >a{
+            color: $primary;
+          }
+        }
         list-style: none;
-        border-bottom: 1px solid #c7c7c77a;
         a {
           color: black;
           text-decoration: none;
@@ -66,6 +118,15 @@
           i {
             margin-right: 1rem;
           }
+        }
+      }
+    }
+    .nav-sub{
+      ul{
+        padding-left: 2rem;
+        a{
+          text-transform: unset;
+          padding: 4px .8rem;
         }
       }
     }
