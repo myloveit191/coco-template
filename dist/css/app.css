@@ -8073,12 +8073,12 @@ body {
   font-size: 1.5rem;
   cursor: pointer; }
 
-#preview-modal .modal .product-inner {
+#preview-modal .product-inner {
   padding: 30px; }
-  #preview-modal .modal .product-inner .title {
+  #preview-modal .product-inner .title {
     font-size: 1.3rem;
     color: #343a40; }
-  #preview-modal .modal .product-inner .product-short-description p {
+  #preview-modal .product-inner .product-short-description p {
     margin-bottom: 0.3rem; }
 
 .header-top {
