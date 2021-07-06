@@ -8,9 +8,17 @@
 @import "section";
 @import "products";
 @import "product";
+@import "modal";
 @import "header";
 @import "footer";
-
+.is-divider {
+  height: 3px;
+  display: block;
+  background-color: rgba(0,0,0,0.1);
+  margin: 1em 0 1em;
+  width: 100%;
+  max-width: 30px;
+}
 .sort-list {
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(212, 212, 212, 0.671);

@@ -121,7 +121,7 @@
                 <div class="col"> 
                   <div class="card"> 
                     <div class="image-cover"> <a href="#"> <img class="card-img-top" src="https://cocohitech.com/wp-content/uploads/2014/08/21863895b39a49c4108b-534x400.jpg" alt=""></a>
-                      <div class="quick-view">Quick view     </div>
+                      <div class="quick-view" data-bs-toggle="modal" data-bs-target="#preview-modal">Quick view     </div>
                     </div>
                     <div class="card-body text-center"> <a class="product-category" href="#">    
                         <p>COCONUT</p></a><a class="product-name" href="#">
@@ -223,10 +223,11 @@
           </div>
         </section>
         <section class="section-videos"><img class="bg-img-fill" src="https://cocohitech.com/wp-content/uploads/2020/04/banner-home-footer-1400x365.jpg" alt="">
-          <div class="container videos-inner">
+          <div class="container videos-inner d-flex justify-content-center">
              <iframe width="560" height="315" src="https://www.youtube.com/embed/yQEFhlpF3Fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </section>
         <section class="section-posts section-general">
+          <div class="img-bg" style="background-image:url(../imgs/home-2-slider-bg.png);background-size: cover"></div>
           <div class="container">
             <div class="text-center"> 
               <h2 class="title">Tin tức</h2>
@@ -283,6 +284,43 @@
         </section>
       </div>
     </main>
+    <div class="modal fade" id="preview-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><span class="close" data-bs-dismiss="modal"> <i class="far fa-times"></i></span>
+      <div class="modal-dialog modal-dialog-centered modal-lg"> 
+        <div class="modal-content"> 
+          <div class="modal-body"> 
+            <div class="row"> 
+              <div class="col-md-6"> 
+                <div class="product-slider"> 
+                  <div class="swiper-container swiper-product-preview">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"> <img src="https://cocohitech.com/wp-content/uploads/2020/04/Water-Hyacinth-Fiber-5-800x533.jpg" alt="" width="100%"></div>
+                      <div class="swiper-slide"><img src="https://cocohitech.com/wp-content/uploads/2020/04/Water-Hyacinth-Fiber-6-800x533.jpeg" alt="" width="100%"></div>
+                      <div class="swiper-slide"><img src="https://cocohitech.com/wp-content/uploads/2019/08/Coir-Rope-800x533.jpg" alt="" width="100%"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"> </div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6"> 
+                <div class="product-inner"><a href="#"> 
+                    <h1 class="title">Braided Water Hyacinth Fiber</h1></a>
+                  <div class="is-divider small"></div>
+                  <div class="product-short-description">
+                    <p> <strong>∗ Material:</strong>100% water hyacinth fiber</p>
+                    <p> <strong>∗ Port:</strong>Cat Lai Port, Hochiminh City, Vietnam</p>
+                    <p> <strong>∗ Payment:</strong>T/T, L/C</p>
+                    <p> <strong>∗ Original:</strong>Tien Giang, Hau Giang, Long An, Vietnam</p>
+                    <p> <strong>∗ Supply:</strong>2000 packs per month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="e-sidebar" id="menu"> 
       <div class="sidebar-inner">
         <div class="content-sidebar">
@@ -298,7 +336,7 @@
             </li>
             <li><a href="/html/blog.html">Tin Tức</a></li>
             <li><a href="/html/contact.html">Liên hệ</a></li>
-            <li class="p-x-2"> 
+            <li class="p-2"> 
               <form action="/html/shop.html" method="GET">
                 <input class="form-control btn-search" type="search" name="key_search" placeholder="Tìm kiếm">
                 <input class="btn btn-primary btn-sm mt-2" type="submit" value="Tìm kiếm">
@@ -368,6 +406,7 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"> </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="../js/index.js"> </script>
   </body>
