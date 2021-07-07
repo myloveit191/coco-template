@@ -9,3 +9,21 @@ body {
 .preload * {
   transition: none !important;
 }
+hr{
+  margin: 15px 0;
+  border-width: 0;
+  border-top: 1px solid currentColor;
+  opacity: 0.1;
+}
+.space-h3{
+  height: 3rem;
+}
+.space-h4{
+  height: 4rem;
+}
+.space-h2{
+  height: 2rem;
+}
+.space-h1{
+  height: 1rem;
+}

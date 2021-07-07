@@ -2,6 +2,8 @@
 @import "background";
 @import "button";
 @import "nav";
+@import "list";
+@import "image";
 @import "sidebar";
 @import "breadcrumb";
 @import "slider";
@@ -62,4 +64,7 @@
       }
     }
   }
+}
+.bg-img{
+  background-position: center;
 }

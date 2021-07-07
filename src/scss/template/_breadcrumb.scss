@@ -5,10 +5,11 @@
         margin: 0;
         padding: 0;
         a{
-            color: $dark;
+            color: $white;
+            text-transform: uppercase;
         }
         .active{
-            color: #888;
+            color: $white;
         }
     }
 }

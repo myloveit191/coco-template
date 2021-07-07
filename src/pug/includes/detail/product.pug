@@ -1,7 +1,7 @@
-.container-xxl.bg-grey-200
+.container
     .product-wrapper.mb-4
         .row 
-            .col-12.col-md-7 
+            .col-12.col-md-6 
                 .product-slider.row.g-2 
                     .col-3.col-md-2.preview-product 
                         .swiper-container.thumb-carousel
@@ -21,24 +21,116 @@
                                 .swiper-slide 
                                     .image-cover 
                                         img(src="https://cocohitech.com/wp-content/uploads/2020/04/Dried-Noni-Fruit--400x400.jpg", alt="")
-            .col-12.col-md-5 
+            .col-12.col-md-6 
                 .product-content
                     .content-header
                         .category
                             h6 Loại danh mục:
                                 a(href="#")   Dừa 
-                        .product-name Coir Mat
+                        .product-name Areca Leaf Plates
+                        .is-divider
                     .content-body 
                         .short-description
                             p Material: 100% coconut shell
                             p Port: Cat Lai Port, Hochiminh City, Vietnam
                             p Original: Ben Tre, Vietnam
+                        .warranty.mb-4(style="background: url(https://cocohitech.com/wp-content/uploads/2018/11/product-extra-guarantee.png) no-repeat bottom right;background-size: 150px;")
+                            h3 WHY CHOOSE US?
+                            ul.u-list
+                                li.li-check 100% natural material of Vietnam
+                                li.li-check 4 years Experience in exporting to Asian market
+                                li.li-check Simplified trading Procedure and Quick Delivery
+                                li.li-check Reasonable price Flexible Price term
                         .choose-buying
-                            a(href="#").btn.btn-primary Liên hệ 
-    h4 Mô tả sản phẩm    
-    .product-wrapper.mb-4
-        h2 What is CocoHitech?
-        p CocoHitech Vietnam is a joint-stock company founded with the vision of providing oversea importers a great source of high-quality products made from coconut material. Our company provides a wide range of coconut products such as coir mat, coir rope, coconut husk chips,…etc, in which coir mat is the main product that we invest the most effort on. For the comfort of a pedestrian on uncovered roads and soil preservation, our environmental-friendly Coir Mats are made from 100% coconut shell material of Ben Tre province, known as the land of coconut in Vietnam
-        img(src="https://cocohitech.com/wp-content/uploads/2018/10/1-coco-hitech-jsc-vietnam-768x512.jpg", alt="")
-        h2 What is the coir mat?
-        p Coir mat is a kind of eco-friendly mat made from coconut fiber which is found between the hard, internal shell of the outer coat of a coconut. After fully mature coconuts are harvested, they are put into machines to separate the long bristle fibers underneath the skin of the nut. This process is called wet-milling. Next, these coconut fibers are twisted into thicker and stronger strings which are then tied into coir mats. The coir fiber is relatively waterproof and is one of the few natural materials that are resistant to damage by seawater.
+                            .info-contact Please Call 
+                                a(href="tel:+‭8493 8244404") +‭8493 8244404
+                                | (Zalo, Messenger)
+                            a(href="#").btn.btn-orange-moon 
+                                span.text Liên hệ 
+                                br
+                                | We are confirming your order within 24 hours
+    .product-wrapper.border-box.mb-4
+        .description.mb-4
+            h2 What is CocoHitech?
+            p CocoHitech Vietnam is a joint-stock company founded with the vision of providing oversea importers a great source of high-quality products made from coconut material. Our company provides a wide range of coconut products such as coir mat, coir rope, coconut husk chips,…etc, in which coir mat is the main product that we invest the most effort on. For the comfort of a pedestrian on uncovered roads and soil preservation, our environmental-friendly Coir Mats are made from 100% coconut shell material of Ben Tre province, known as the land of coconut in Vietnam
+            img(src="https://cocohitech.com/wp-content/uploads/2018/10/1-coco-hitech-jsc-vietnam-768x512.jpg", alt="")
+            h2 What is the coir mat?
+            p Coir mat is a kind of eco-friendly mat made from coconut fiber which is found between the hard, internal shell of the outer coat of a coconut. After fully mature coconuts are harvested, they are put into machines to separate the long bristle fibers underneath the skin of the nut. This process is called wet-milling. Next, these coconut fibers are twisted into thicker and stronger strings which are then tied into coir mats. The coir fiber is relatively waterproof and is one of the few natural materials that are resistant to damage by seawater.
+        .space-h2
+        hr
+        .space-h2
+        include ../section/ourservice
+        .space-h2
+        hr
+        .space-h2
+        include ../section/supply
+        .space-h2
+        hr
+        .space-h2
+        include ../section/message-box
+        .space-h2
+        hr
+        .space-h2
+        include ../section/contact-us
+    .products-related.mb-4 
+        h2 RELATED PRODUCTS
+        .swiper-container.swiper-product-related
+            .swiper-wrapper
+                .swiper-slide 
+                    .card 
+                        .image-cover 
+                            a(href="#") 
+                                img(src="https://cocohitech.com/wp-content/uploads/2019/08/Coir-Rope-600x400.jpg", alt="").card-img-top
+                            .quick-view(data-bs-toggle="modal" data-bs-target="#preview-modal") Quick view
+                        .card-body.text-center 
+                            a(href="#").product-category     
+                                p COCONUT
+                            a(href="#").product-name
+                                p Coconut Fiber
+                .swiper-slide 
+                    .card 
+                        .image-cover 
+                            a(href="#") 
+                                img(src="https://cocohitech.com/wp-content/uploads/2019/07/Coconut-Husk--280x280.jpg", alt="").card-img-top
+                            .quick-view(data-bs-toggle="modal" data-bs-target="#preview-modal") Quick view
+                        .card-body.text-center  
+                            a(href="#").product-category     
+                                p COCONUT
+                            a(href="#").product-name
+                                p Coconut Husk Chips
+                .swiper-slide 
+                    .card 
+                        .image-cover 
+                            a(href="#") 
+                                img(src="https://cocohitech.com/wp-content/uploads/2018/10/Coconut-Peat-3-400x400.jpg", alt="").card-img-top
+                            .quick-view(data-bs-toggle="modal" data-bs-target="#preview-modal") Quick view
+                        .card-body.text-center  
+                            a(href="#").product-category     
+                                p COCONUT
+                            a(href="#").product-name
+                                p Coconut Peat
+                .swiper-slide
+                    .card 
+                        .image-cover 
+                            a(href="#") 
+                                img(src="https://cocohitech.com/wp-content/uploads/2018/10/cocohitech-5-533x400.jpg", alt="").card-img-top
+                            .quick-view(data-bs-toggle="modal" data-bs-target="#preview-modal") Quick view
+                        .card-body.text-center 
+                            a(href="#").product-category       
+                                p COCONUT
+                            a(href="#").product-name
+                                p Coir Mat
+                .swiper-slide
+                    .card 
+                        .image-cover 
+                            a(href="#") 
+                                img(src="https://cocohitech.com/wp-content/uploads/2014/08/21863895b39a49c4108b-534x400.jpg", alt="").card-img-top
+                            .quick-view(data-bs-toggle="modal" data-bs-target="#preview-modal") Quick view
+                        .card-body.text-center 
+                            a(href="#").product-category     
+                                p COCONUT
+                            a(href="#").product-name
+                                p Coconut Fiber
+            .swiper-button-next 
+            .swiper-button-prev
+

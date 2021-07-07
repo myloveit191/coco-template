@@ -2,7 +2,7 @@ extends template/layout
 
 block main 
     main
-        .breadcrumb-wraper 
+        .breadcrumb-wraper.bg-img(style="background-image:url(https://cocohitech.com/wp-content/uploads/2020/04/Areca-Leaf-Plates-2.jpg)") 
             .container 
                 nav(aria-label="breadcrumb")
                     ol.breadcrumb
@@ -14,5 +14,6 @@ block main
         #content
             section.detail-product
                 include ./includes/detail/product
+    include ./includes/home/modal-view
 block js 
     script(src="../js/detail.js") 

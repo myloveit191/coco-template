@@ -1,0 +1,29 @@
+.u-list {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0.5rem 0 0.5rem 2rem;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    line-height: 1.5;
+    &::before {
+      position: absolute;
+      font-family: "Font Awesome 5 Pro";
+      left: 0;
+      color: $primary;
+      font-weight: 600;
+    }
+    &.li-check{
+      &::before {
+        content: "\f00c";
+      }
+    }
+    &.li-star{
+      &::before {
+        content: "\f005";
+      }
+    }
+  }
+  
+}
