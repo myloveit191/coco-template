@@ -1,52 +1,169 @@
-.container 
-    .p-4.p-md-5.mb-4.text-white.rounded.bg-dark
-        .col-md-6.px-0 
-            h1.display-4.fst-italic Title of a longer featured blog post
-            p.lead.my-3 Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.
-            p.lead.mb-0 
-                a(href="#").text-white.fw-bold Continue reading...
+.container.my-5 
+    //- .p-4.p-md-5.mb-4.text-white.rounded.bg-img(style="background:url(https://cocohitech.com/wp-content/uploads/2020/04/banner-home-footer-1400x365.jpg)")
+    //-     .col-md-6.px-0.bg-grey-300 
+    //-         h1.display-4.fst-italic Title of a longer featured blog post
+    //-         p.lead.my-3 Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.
+    //-         p.lead.mb-0 
+    //-             a(href="#").text-white.fw-bold Continue reading...
     .row
-        .col-md-8
-            .row.mb-3 
-                .col-auto.d-none.d-lg-block
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                .col.p-4.d-flex.flex-column.position-static
-                    strong.d-inline-block.mb-2.text-primary Nông nghiệp
-                    h3.mb-0 Thị trường nông nghiệp 
-                    .mb-1.text-muted Tháng 12
-                    p.card-text.mb-auto We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
-                    a(href="/html/post.html") Xem thêm 
-            .row.mb-3 
-                .col-auto.d-none.d-lg-block
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                .col.p-4.d-flex.flex-column.position-static
-                    strong.d-inline-block.mb-2.text-primary Nông nghiệp
-                    h3.mb-0 Thị trường nông nghiệp 
-                    .mb-1.text-muted Tháng 12
-                    p.card-text.mb-auto We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
-                    a(href="/html/post.html") Xem thêm 
-            .row.mb-3  
-                .col-auto.d-none.d-lg-block
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                .col.p-4.d-flex.flex-column.position-static
-                    strong.d-inline-block.mb-2.text-primary Nông nghiệp
-                    h3.mb-0 Thị trường nông nghiệp 
-                    .mb-1.text-muted Tháng 12
-                    p.card-text.mb-auto We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
-                    a(href="/html/post.html") Xem thêm 
-        .col-md-4
-            .position-sticky(style="top: 2rem;").bg-light.rounded 
-                .p-4
-                    h4 Archives
-                    ol.list-unstyled.mb-0
-                        li
-                            a(href="/html/post.html") Tháng 5/2021
-                        li
-                            a(href="/html/post.html") Tháng 4/2021
-                        li
-                            a(href="/html/post.html") Tháng 3/2021
-                        li
-                            a(href="/html/post.html") Tháng 2/2021
-                        li
-                            a(href="/html/post.html") Tháng 1/2021
+        .col-md-9
+            .row.mb-3.post-row
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/07/Coir-fiber-300x400.jpg", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="#") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="#") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt 
+                        a(href="#") We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+            .row.mb-3.post-row
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/06/COCO-HUSK-CHIP-5-400x400.png", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="#") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="#") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+            .row.mb-3.post-row 
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/06/Hotline-84-938-244-404-12-400x400.png", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+            .row.mb-3.post-row 
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/06/Coco-peat-Vietnam-400x400.png", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+            .row.mb-3.post-row 
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/06/coco-peat-grow-bags-400x400.png", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+                    .row.mb-3.post-row
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/07/Coir-fiber-300x400.jpg", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="#") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="#") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt 
+                        a(href="#") We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+            .row.mb-3.post-row
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/06/COCO-HUSK-CHIP-5-400x400.png", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="#") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="#") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+            .row.mb-3.post-row 
+                .col-md-5.image-cover.post-thumb-pd
+                    img(src="https://cocohitech.com/wp-content/uploads/2021/06/Hotline-84-938-244-404-12-400x400.png", alt="")
+                    div.post-date.text-muted 
+                        a(href="#") Tháng 12
+                .col.p-3.d-flex.flex-column.position-static
+                    strong.d-inline-block.mb-2.text-primary 
+                        a(href="") Nông nghiệp
+                    h3.mb-0.post-title 
+                        a(href="") Thị trường nông nghiệp 
+                    .is-divider
+                    p.text-paragraph.mb-auto.post-excerpt We would be delighted to provide to qualified customers, at no cost or obligation to your company, samples, and further documentation, as well as discuss your concerns and needs
+        .col-md-3
+            .position-sticky(style="top: 2rem;")
+                .p-2.widget-products.mb-2
+                    h4.widget-title Other product
+                    .is-divider
+                    .products
+                        .card 
+                            .row.g-0 
+                                .col-4 
+                                    img.img-fluid.rounded-start(src="https://cocohitech.com/wp-content/uploads/2020/04/Areca-Leaf-Plates-2-100x100.jpg", alt="")
+                                .col-8 
+                                    .card-body 
+                                        a(href="").category-name
+                                            p.card-text
+                                                small.text-muted Coconut
+                                        a(href="").product-name 
+                                            h5.card-title.card-text Areca Leaf Plates
+                        .card 
+                            .row.g-0 
+                                .col-4 
+                                    img.img-fluid.rounded-start(src="https://cocohitech.com/wp-content/uploads/2020/04/Areca-Leaf-Plates-2-100x100.jpg", alt="")
+                                .col-8 
+                                    .card-body 
+                                        a(href="").category-name
+                                            p.card-text
+                                                small.text-muted Coconut
+                                        a(href="").product-name 
+                                            h5.card-title.card-text Areca Leaf Plates
+                .p-2.widget-latest-post.mb-2
+                    h4.widget-title LATEST POSTS
+                    .is-divider
+                    ul.u-list
+                        li.text-paragraph
+                            a(href="#").text-primary Tháng 8
+                            a(href="#") Washed and unwashed coco peat difference
+                    ul.u-list
+                        li.text-paragraph
+                            a(href="#").text-primary Tháng 10
+                            a(href="#") Coco Peat Grow Bags – COCO HITECH JSC
+                    ul.u-list
+                        li.text-paragraph
+                            a(href="#").text-primary Tháng 10
+                            a(href="#") Coconut products – COCO HITECH JSC
+                    ul.u-list
+                        li.text-paragraph
+                            a(href="#").text-primary Tháng 11
+                            a(href="#") Washed and unwashed coco peat difference
+                    ul.u-list
+                        li.text-paragraph
+                            a(href="#").text-primary Tháng 12
+                            a(href="#") Coco Peat Grow Bags – COCO HITECH JSC
+                .p-2.widget-tag-post.mb-2
+                    h4.widget-title LATEST POSTS
+                    .is-divider
+                    div.tags
+                        a(href="").btn.btn-outline-secondary.btn-sm coconut
+                        a(href="").btn.btn-outline-secondary.btn-sm product coconut 
+                        a(href="").btn.btn-outline-secondary.btn-sm cocohitech 
+                        a(href="").btn.btn-outline-secondary.btn-sm coco peat vietnam 
+                        a(href="").btn.btn-outline-secondary.btn-sm Green coconut 
+                        a(href="").btn.btn-outline-secondary.btn-sm Fresh coconut
 

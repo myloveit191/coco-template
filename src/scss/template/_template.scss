@@ -13,6 +13,8 @@
 @import "modal";
 @import "header";
 @import "footer";
+@import "post";
+
 .is-divider {
   height: 3px;
   display: block;
@@ -67,4 +69,9 @@
 }
 .bg-img{
   background-position: center;
+}
+@include media-breakpoint-down(md) {
+  main{
+    margin-top: 90px;
+  }
 }
