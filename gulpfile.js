@@ -2,6 +2,7 @@ const {src, dest , watch , series} = require('gulp');
 
 const pug = require('gulp-pug');
 const scss = require('gulp-sass');
+const uglify = require('gulp-uglify');
 // const postcss = require('gulp-postcss');
 // const cssnano = require('cssnano');
 const terser = require('gulp-terser');
@@ -19,7 +20,8 @@ function scssTask() {
 //JS Task
 function jsTask() {
     return src('./src/js/*.js')
-        .pipe(terser())    
+        .pipe(terser())   
+        // .pipe(uglify()) 
         .pipe(dest('dist/js'))
 }
 

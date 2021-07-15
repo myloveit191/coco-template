@@ -52,15 +52,15 @@
         opacity: 1;
       }
     }
-    &.on-right{
-      ul{
+    &.on-right {
+      ul {
         right: 0;
       }
     }
   }
-  .btn-search{
+  .btn-search {
     width: 300px;
-    &:focus{
+    &:focus {
       outline: none;
       border: 1px solid $primary;
       box-shadow: none;
@@ -99,11 +99,6 @@
       margin: 0;
       padding: 0;
       li {
-        &.item-active{
-          >a{
-            color: $primary;
-          }
-        }
         list-style: none;
         a {
           color: black;
@@ -119,14 +114,18 @@
             margin-right: 1rem;
           }
         }
+        &.mm-active > a {
+          color: $primary;
+        }
       }
     }
-    .nav-sub{
-      ul{
+    .nav-sub {
+      ul {
         padding-left: 2rem;
-        a{
+        a {
           text-transform: unset;
-          padding: 4px .8rem;
+          padding: 4px 0.8rem;
+          font-weight: 400;
         }
       }
     }

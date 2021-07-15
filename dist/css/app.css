@@ -7726,8 +7726,6 @@ hr {
       padding: 0; }
       .e-sidebar .content-sidebar ul li {
         list-style: none; }
-        .e-sidebar .content-sidebar ul li.item-active > a {
-          color: #ffc50e; }
         .e-sidebar .content-sidebar ul li a {
           color: black;
           text-decoration: none;
@@ -7739,11 +7737,14 @@ hr {
             color: #ffc50e; }
           .e-sidebar .content-sidebar ul li a i {
             margin-right: 1rem; }
+        .e-sidebar .content-sidebar ul li.mm-active > a {
+          color: #ffc50e; }
     .e-sidebar .content-sidebar .nav-sub ul {
       padding-left: 2rem; }
       .e-sidebar .content-sidebar .nav-sub ul a {
         text-transform: unset;
-        padding: 4px .8rem; }
+        padding: 4px 0.8rem;
+        font-weight: 400; }
   .e-sidebar .sidebar-inner {
     flex: 0 0 auto;
     width: 280px;
@@ -8186,6 +8187,9 @@ hr {
     color: #343a40; }
   #preview-modal .product-inner .product-short-description p {
     margin-bottom: 0.3rem; }
+
+header {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15); }
 
 .header-top {
   background-color: #343a40; }

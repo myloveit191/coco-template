@@ -1,4 +1,5 @@
 $("body").removeClass("preload");
+$('#nav-mobile').metisMenu();
 const swiper_banner = new Swiper(".swiper-banner", {
   loop: true,
   autoplay: {
