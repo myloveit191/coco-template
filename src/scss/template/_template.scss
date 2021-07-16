@@ -70,6 +70,9 @@
 .bg-img{
   background-position: center;
 }
+.search-mobile{
+  padding: 8px 1.2rem;
+}
 @include media-breakpoint-down(md) {
   main{
     margin-top: 90px;

@@ -48,4 +48,8 @@ footer {
     top: 0;
     bottom: 0;
   }
+  .bg-front-of {
+    position: relative;
+    z-index: 10;
+  }
 }
